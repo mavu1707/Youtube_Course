@@ -1,0 +1,49 @@
+<style>
+  .testButton{
+    color: white;
+    background-color: rgb(178, 0, 248);
+    border: none; /* Dette sier om knappen skal ha en tegnelinje rundt seg*/
+    border-radius: 3px; /*Om knappen skal ha myke kanter eller ikke */
+    padding: 10px 20px; /*Størrelsen på knappen*/
+    transition: opacity 0.15s; /*sier om hvor raks "animasjonen" skal være*/
+    cursor: pointer; /*når musen er over knappoen skal musen gli til en peker*/
+    transition: padding 0.15s;
+  }
+.testButton:hover{
+  opacity: 0.8; /*Gjennomsiktighet, fra 1-0*/
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1); /*om boksen skal ha skygge, hvor skygggen skal være, hvor blurry den skal være, fargene*/
+  padding: 8px 18px;
+}
+.testButton:active{ /*Hva som skal skje med knappen når den blir trykket ned*/
+  opacity: 0.5;
+  padding: 20px 20px;
+}
+
+.likeButton{
+  color: blue;
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  border-color: blueviolet;
+  border-width: 2px;
+  font-size: 20px;
+  padding: 20px 30px;
+  transition: opacity 0.15s;
+}
+.likeButton:hover{
+  opacity: 0.8;
+}
+.likeButton:active{
+  opacity: 0.3;
+}
+
+
+
+</style>
+
+<button class="testButton">
+  TEST
+</button>
+<button class="likeButton">
+  LIKE
+</button>
